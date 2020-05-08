@@ -1,17 +1,25 @@
 <template>
-    <div>
-        <BookableListItem></BookableListItem>
-    </div>
-
+<div>
+    <h1>xxxxxx</h1>
+</div>
 </template>
 
 <script>
-    import BookableListItem from "./BookableListItem";
     export default {
+        name: "Bookable",
 
-        components:{
-            BookableListItem : BookableListItem,
+        data() {
+            return {
+                bookable:null,
+
+            }
+        },
+        created() {
+            console.log(this.$route.params.id);
+            axios.get(`/api/bookables/${this.$route.params.id}`).then(response => (this.bookable = response.data()));
         }
+
+
     }
 </script>
 

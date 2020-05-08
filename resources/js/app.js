@@ -3,7 +3,7 @@ require('./bootstrap');
 
 import router from "./routes";
 import VueRouter from "vue-router";
-import index from "./components/index";
+import index from "./index";
 
 window.Vue = require('vue');
 
@@ -13,7 +13,6 @@ window.Vue = require('vue');
 // files.keys().map(key => Vue.component(key.split('/').pop().split('.')[0], files(key).default))
 
 Vue.use(VueRouter);
-
 
 const app = new Vue({
     el: '#app',
