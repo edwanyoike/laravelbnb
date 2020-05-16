@@ -12,7 +12,7 @@
                     <div class="col-md-6">edwin</div>
 
                     <div class="col-md-6 d-flex justify-content-end">
-                        <StarRating :rating="review.rating"></StarRating>
+                        <StarRating :value="review.rating"></StarRating>
 
                     </div>
 
