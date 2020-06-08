@@ -14,6 +14,12 @@ class BookingByReviewShowResource extends JsonResource
      */
     public function toArray($request)
     {
-        return parent::toArray($request);
+        return [
+            'booking_id'=> $this->id,
+            'from'=> $this->from,
+            'to'=>$this->to,
+            'bookable'=>new BookingByReviewBookableShowResource($this->bookable),
+
+        ];
     }
 }

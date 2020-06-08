@@ -44,7 +44,7 @@
         components: {StarRating},
         props: {
             bookableId: {
-                type: String,
+                type: [String,Number]
             },
         },
         data() {

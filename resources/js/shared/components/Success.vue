@@ -1,9 +1,9 @@
 <template>
     <div class="text-center success">
-        <i class="fas fa-bomb"></i>
+        <i class="far fa-thumbs-up"></i>
 
-        <h1 class="mt-4"> error met</h1>
-        <h2> error being killed</h2>
+        <h1 class="mt-4"> Success</h1>
+        <h2> operation was successful</h2>
 
     </div>
 </template>

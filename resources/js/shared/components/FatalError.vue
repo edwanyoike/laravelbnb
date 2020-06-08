@@ -1,5 +1,13 @@
 <template>
-    $END$
+    <div class="text-center error">
+        <i class="fas fa-bomb">
+
+        </i>
+
+        <h1 class="mt-4"> error met</h1>
+        <h2> error being killed</h2>
+
+    </div>
 </template>
 
 <script>
@@ -9,5 +17,10 @@
 </script>
 
 <style scoped>
+
+    .error {
+        color: grey;
+        font-size: 10rem;
+    }
 
 </style>
