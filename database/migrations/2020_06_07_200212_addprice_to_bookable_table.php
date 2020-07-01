@@ -25,7 +25,7 @@ class AddpriceToBookableTable extends Migration
      */
     public function down()
     {
-        Schema::table('bookable', function (Blueprint $table) {
+        Schema::table('bookables', function (Blueprint $table) {
             $table->dropColumn('price');
 
         });
