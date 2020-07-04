@@ -13,18 +13,12 @@ const routes = [
 		path: '/',
 		component:Bookables,
 		name:'home',
-        meta:{
-            requiresAuth:true
-        }
 
 	},
 	{
 		path: '/bookable/:id',
 		component:Bookable,
 		name:'bookable',
-        meta:{
-            requiresAuth:true
-        }
 
 	},
 	{

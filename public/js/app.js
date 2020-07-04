@@ -81339,17 +81339,11 @@ __webpack_require__.r(__webpack_exports__);
 var routes = [{
   path: '/',
   component: _bookables_Bookables__WEBPACK_IMPORTED_MODULE_0__["default"],
-  name: 'home',
-  meta: {
-    requiresAuth: true
-  }
+  name: 'home'
 }, {
   path: '/bookable/:id',
   component: _bookable_Bookable__WEBPACK_IMPORTED_MODULE_1__["default"],
-  name: 'bookable',
-  meta: {
-    requiresAuth: true
-  }
+  name: 'bookable'
 }, {
   path: '/review/:id',
   component: _review_Review__WEBPACK_IMPORTED_MODULE_2__["default"],
