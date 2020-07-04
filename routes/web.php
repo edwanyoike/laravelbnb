@@ -12,12 +12,12 @@
 |
 */
 
-\Illuminate\Support\Facades\Auth::routes();
+use Illuminate\Support\Facades\Auth;
+use Illuminate\Http\Request;
+
+Auth::routes();
 
 
-Route::get('/{any?}', function () {
-    return view('welcome');
-})->where('any', '^(?!api\/)[\/\w\.-]*');
 
 Auth::routes();
 
@@ -26,5 +26,11 @@ Route::middleware('auth')->get('/user', function (Request $request) {
     return $request->user();
 });
 
+Route::get('/{any?}', function () {
+    return view('welcome');
+})->where('any', '^(?!api\/)[\/\w\.-]*');
 
-Route::get('/home', 'HomeController@index')->name('home');
+
+
+
+//Route::get('/home', 'HomeController@index')->name('home');
